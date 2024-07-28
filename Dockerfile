@@ -3,8 +3,6 @@ FROM manimcommunity/manim:v0.18.1
 USER root
 RUN pip install notebook
 RUN pip install schemdraw
-RUN apt update
-RUN apt install libcairo2-dev ffmpeg texlive texlive-latex-extra texlive-fonts-extra texlive-latex-recommended texlive-science tipa libpango1.0-dev
 
 
 ARG NB_USER=manimuser
