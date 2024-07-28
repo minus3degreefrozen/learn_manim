@@ -4,3 +4,11 @@ apt install libcairo2-dev ffmpeg \
     texlive texlive-latex-extra texlive-fonts-extra \
     texlive-latex-recommended texlive-science \
     tipa libpango1.0-dev
+
+# 安装中文字体（宋体和楷体）
+apt-get install -y fonts-simsun fonts-arphic-ukai
+
+# 安装JetBrains Mono字体
+wget https://download.jetbrains.com/fonts/JetBrainsMono-2.242.zip -O jetbrains_mono.zip
+unzip jetbrains_mono.zip -d /usr/share/fonts/truetype/jetbrains_mono
+fc-cache -fv
